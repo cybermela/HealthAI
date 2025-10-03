@@ -105,14 +105,15 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-1">
-            <Link to="/">
+            {/* Removed Home button as per request */}
+            {/* <Link to="/">
               <Button 
                 variant={isActive("/") ? "secondary" : "ghost"}
                 className="transition-smooth"
               >
                 Home
               </Button>
-            </Link>
+            </Link> */}
             {user && navItems.map((item) => (
               <Link key={item.to} to={item.to}>
                 <Button 
