@@ -1,0 +1,17 @@
+- [ ] Fix empty object types in src/components/ui/command.tsx and src/components/ui/textarea.tsx
+- [ ] Fix require import in tailwind.config.ts
+- [ ] Fix 'any' types in src/pages/Appointments.tsx
+- [ ] Fix 'any' types in src/pages/Auth.tsx
+- [ ] Fix 'any' types in src/pages/BookAppointment.tsx
+- [ ] Fix 'any' types in src/pages/Chat.tsx
+- [ ] Fix 'any' types in src/pages/Doctors.tsx
+- [ ] Fix 'any' types in src/pages/MedicalDocuments.tsx
+- [ ] Fix 'any' types in src/pages/Pharmacies.tsx
+- [ ] Fix 'any' types in supabase/functions/ai-diagnosis/index.ts
+- [ ] Run lint to verify fixes
+- [ ] Initialize git if needed
+- [ ] Commit changes
+- [ ] Check if GitHub CLI is installed
+- [ ] Create GitHub repository
+- [ ] Push to GitHub
+- [ ] Deploy to Vercel
