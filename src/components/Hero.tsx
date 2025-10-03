@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Heart, Stethoscope, Activity } from "lucide-react";
+import { ArrowRight, Heart, Stethoscope, Activity, Users, MapPin, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -12,21 +12,21 @@ const Hero = () => {
       </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-8 shadow-soft">
-            <Activity className="w-4 h-4" />
+            <Activity className="w-5 h-5" />
             <span className="text-sm font-medium">AI-Powered Healthcare</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-glow to-secondary bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 bg-gradient-to-r from-primary via-primary-glow to-secondary bg-clip-text text-transparent">
             Your Health, Our Priority
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
             Get instant medical guidance with our AI-powered triage system. Connect with doctors and find nearby pharmacies—all in one place.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
             <Link to="/chat">
               <Button size="lg" className="gradient-primary shadow-glow hover:scale-105 transition-smooth group">
                 Start AI Consultation
@@ -41,39 +41,51 @@ const Hero = () => {
           </div>
 
           {/* Feature cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
             <Link to="/chat" className="block">
-              <div className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-smooth animate-slide-up cursor-pointer hover:scale-105">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                  <Stethoscope className="w-6 h-6 text-primary" />
+              <div className="bg-card rounded-3xl p-8 shadow-soft hover:shadow-medium transition-smooth animate-slide-up cursor-pointer hover:scale-105">
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                  <Stethoscope className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">AI Symptom Checker</h3>
-                <p className="text-muted-foreground text-sm">
-                  Describe your symptoms and get instant AI-powered health assessment
+                <h3 className="text-xl font-semibold mb-3">AI Symptom Checker</h3>
+                <p className="text-muted-foreground text-base">
+                  Describe your symptoms and get instant AI-powered health assessment.
                 </p>
               </div>
             </Link>
 
             <Link to="/doctors" className="block">
-              <div className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-smooth animate-slide-up delay-150 cursor-pointer hover:scale-105">
-                <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center mb-4">
-                  <Heart className="w-6 h-6 text-secondary" />
+              <div className="bg-card rounded-3xl p-8 shadow-soft hover:shadow-medium transition-smooth animate-slide-up delay-150 cursor-pointer hover:scale-105">
+                <div className="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                  <Users className="w-7 h-7 text-secondary" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Connect with Doctors</h3>
-                <p className="text-muted-foreground text-sm">
-                  Book online or physical appointments with qualified healthcare professionals
+                <h3 className="text-xl font-semibold mb-3">Connect with Doctors</h3>
+                <p className="text-muted-foreground text-base">
+                  Book online or physical appointments with qualified healthcare professionals.
                 </p>
               </div>
             </Link>
 
             <Link to="/pharmacies" className="block">
-              <div className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-medium transition-smooth animate-slide-up delay-300 cursor-pointer hover:scale-105">
-                <div className="w-12 h-12 bg-warning/10 rounded-xl flex items-center justify-center mb-4">
-                  <Activity className="w-6 h-6 text-warning" />
+              <div className="bg-card rounded-3xl p-8 shadow-soft hover:shadow-medium transition-smooth animate-slide-up delay-300 cursor-pointer hover:scale-105">
+                <div className="w-14 h-14 bg-warning/10 rounded-xl flex items-center justify-center mb-6">
+                  <MapPin className="w-7 h-7 text-warning" />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Find Pharmacies</h3>
-                <p className="text-muted-foreground text-sm">
-                  Locate registered pharmacies near you for quick medication access
+                <h3 className="text-xl font-semibold mb-3">Find Pharmacies</h3>
+                <p className="text-muted-foreground text-base">
+                  Locate registered pharmacies near you for quick medication access.
+                </p>
+              </div>
+            </Link>
+
+            <Link to="/appointments" className="block">
+              <div className="bg-card rounded-3xl p-8 shadow-soft hover:shadow-medium transition-smooth animate-slide-up delay-450 cursor-pointer hover:scale-105">
+                <div className="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-6">
+                  <Calendar className="w-7 h-7 text-purple-500" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Manage Appointments</h3>
+                <p className="text-muted-foreground text-base">
+                  Easily schedule and manage your medical appointments.
                 </p>
               </div>
             </Link>

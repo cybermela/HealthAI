@@ -1,17 +1,4 @@
-- [ ] Fix empty object types in src/components/ui/command.tsx and src/components/ui/textarea.tsx
-- [ ] Fix require import in tailwind.config.ts
-- [ ] Fix 'any' types in src/pages/Appointments.tsx
-- [ ] Fix 'any' types in src/pages/Auth.tsx
-- [ ] Fix 'any' types in src/pages/BookAppointment.tsx
-- [ ] Fix 'any' types in src/pages/Chat.tsx
-- [ ] Fix 'any' types in src/pages/Doctors.tsx
-- [ ] Fix 'any' types in src/pages/MedicalDocuments.tsx
-- [ ] Fix 'any' types in src/pages/Pharmacies.tsx
-- [ ] Fix 'any' types in supabase/functions/ai-diagnosis/index.ts
-- [ ] Run lint to verify fixes
-- [ ] Initialize git if needed
+- [x] Remove unused UI components: accordion.tsx, alert-dialog.tsx, alert.tsx, aspect-ratio.tsx, breadcrumb.tsx, carousel.tsx, chart.tsx, checkbox.tsx, collapsible.tsx, command.tsx, context-menu.tsx, drawer.tsx, form.tsx, hover-card.tsx, input-otp.tsx, menubar.tsx, navigation-menu.tsx, pagination.tsx, popover.tsx, progress.tsx, resizable.tsx, scroll-area.tsx, select.tsx, sidebar.tsx, slider.tsx, switch.tsx, table.tsx, toggle-group.tsx
+- [x] Remove unused lib file: src/lib/supabaseUserExample.ts
+- [ ] Run lint to verify no errors
 - [ ] Commit changes
-- [ ] Check if GitHub CLI is installed
-- [ ] Create GitHub repository
-- [ ] Push to GitHub
-- [ ] Deploy to Vercel
